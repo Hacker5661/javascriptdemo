@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <h1>Today we will learn about JavaScript.</h1>
+    <h2>How do we do on-click events?</h1>
+    <p>Click <a href="https://tracker.gg/valorant" target="_blank" onclick="alert('Warning, you are leaving my site!')">here<a> to check your Valorant stats!</p>
+
+    <button onclick="buttonName()">This is a button</button>
+    <button onclick="askQuestion()">Click for a question!</button>
+
+    <script>
+        alert("Hello, World! \nWelcome to my website!")
+
+        function buttonName() {
+            var nameReturn = document.getElementById('button-name')
+            var name = prompt('Please enter your name', 'HERE')
+            if (name=='') {
+                alert("Please type something!")
+            } else {
+                nameReturn.innerHTML = 'Hello' + name + '!'
+            }
+        }
+    </script>
+</body>
+</html>
